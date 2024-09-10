@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+body {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffffff;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: #bfbfbf;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+  width: 225px;
+  height: 70px;
+  border-radius: 8px;
+  color: black;
+  background-color: white;
+  margin-bottom: 5px;
+
+  font-family: "Krona One", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  text-align: right;
+}
+
+button {
+  background-color: #ffffff;
+  color: black;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  margin: 2px;
+
+  font-family: "Krona One", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: rgb(205, 205, 205);
+  color: black;
+}
+
+th[colspan="2"] button {
+  width: calc(2 * 50px + 10px);
+  text-align: left;
+}
