@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css"/>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" disabled/>
+      <table>
+        <tr>
+          <th><button onclick="onClickCancel('C')">C</button></th>
+          <th><button onclick="onClickToggleSign()">±</button></th>
+          <th><button onclick="onClickPercent()">%</button></th>
+          <th><button onclick="onClickOperator('÷')">÷</button></th>
+        </tr>
+        <tr>
+          <th><button onclick="appendToDisplay(7)">7</button></th>
+          <th><button onclick="appendToDisplay(8)">8</button></th>
+          <th><button onclick="appendToDisplay(9)">9</button></th>
+          <th><button onclick="onClickOperator('+')">+</button></th>
+        </tr>
+        <tr>
+          <th><button onclick="appendToDisplay(4)">4</button></th>
+          <th><button onclick="appendToDisplay(5)">5</button></th>
+          <th><button onclick="appendToDisplay(6)">6</button></th>
+          <th><button onclick="onClickOperator('-')">-</button></th>
+        </tr>
+        <tr>
+          <th><button onclick="appendToDisplay(1)">1</button></th>
+          <th><button onclick="appendToDisplay(2)">2</button></th>
+          <th><button onclick="appendToDisplay(3)">3</button></th>
+          <th><button onclick="onClickOperator('x')">x</button></th>
+        </tr>
+        <tr>
+          <th colspan="2"><button onclick="appendToDisplay('0')">0</button></th>
+          <th><button onclick="appendToDisplay('.')">.</button></th>
+          <th><button onclick="onClickEquals('=')">=</button></th>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script src="JS/script.js"></script>
+</html>
